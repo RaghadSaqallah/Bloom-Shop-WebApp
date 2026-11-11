@@ -1,0 +1,18 @@
+{
+  "name": "bloom-shop",
+  "version": "1.0.0",
+  "description": "Bloom Shop - a responsive online shop built with HTML, Tailwind CSS and JavaScript",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/input.css -o ./src/css/style.css --watch",
+    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

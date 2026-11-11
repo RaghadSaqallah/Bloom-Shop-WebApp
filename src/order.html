@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body class="font-['Lobster'] text-xl relative">
+
+    <!-- header -->
+    <header class="text-[#e4098d]">
+        <nav class="mx-auto w-[90%] max-w-7xl flex items-center justify-between py-6">
+            <div>
+                <a href="index.html" class="text-5xl">Bloom</a>
+            </div>
+            <div class="menu relative">
+                <button class="md:hidden btn-list cursor-pointer text-3xl"><i class="fas fa-bars"></i></button>
+                <ul id="nav-menu"
+                    class="fixed right-[-300px] top-3.5 text-2xl bg-white w-[180px] rounded-[10px] pt-[50px] transition-all duration-300 ease-in-out h-[100vh] flex flex-col gap-10 items-center md:static md:w-auto md:gap-12 md:h-auto md:flex-row md:pt-0">
+                    <button
+                        class="absolute top-[10px] left-[4px] rounded-full w-[20px] h-[20px] flex items-center justify-center cursor-pointer hidden"
+                        id="x">x</button>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#flower">Flowers</a></li>
+                    <li><a href="index.html#bouquet">Bouquet</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- heading -->
+    <section>
+        <div class="flex flex-col gap-3 items-center justify-center text-center mt-10 px-4">
+            <h1 class="text-5xl text-[#e4098d]">Fresh Flowers</h1>
+            <p class="text-2xl text-[#6f7275]">Only For You</p>
+        </div>
+    </section>
+
+
+    <!-- filter -->
+    <section>
+        <div class="w-[90%] max-w-7xl mx-auto flex flex-wrap items-center gap-4 mt-12">
+            <button
+                class="bg-[#e4098d] text-white w-28 h-12 text-3xl rounded-full cursor-pointer hover:bg-[#c4087d] transition-colors duration-300"
+                id="all">All</button>
+            <button
+                class="bg-[#e4098d] text-white w-28 h-12 text-3xl rounded-full cursor-pointer hover:bg-[#c4087d] transition-colors duration-300"
+                id="white">White</button>
+            <button
+                class="bg-[#e4098d] text-white w-28 h-12 text-3xl rounded-full cursor-pointer hover:bg-[#c4087d] transition-colors duration-300"
+                id="pink">Pink</button>
+            <button
+                class="bg-[#e4098d] text-white w-28 h-12 text-3xl rounded-full cursor-pointer hover:bg-[#c4087d] transition-colors duration-300"
+                id="red">Red</button>
+        </div>
+    </section>
+
+
+    <!-- products -->
+    <section class="bg-[#fce4ec] py-16 mt-12" data-aos="fade-up">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 w-[90%] max-w-7xl mx-auto">
+
+            <div class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full pink-card"
+                data-name="pink rose" data-price="30">
+                <img src="images/IMG-20260515-WA0111.jpg" alt="Pink rose" class="w-full h-72 object-cover">
+                <div class="flex items-center justify-between gap-4 p-5">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[#e4098d] text-2xl">Pink Rose</p>
+                        <strong class="text-[#6f7275] text-2xl font-normal">$30</strong>
+                    </div>
+                    <button
+                        class="cursor-pointer bg-[#e4098d] hover:bg-[#c4087d] transition-colors duration-300 w-14 h-14 rounded-full counter"
+                        aria-label="Add to cart"><i class="fas fa-cart-plus text-white text-xl"></i></button>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full white-card"
+                data-name="rose collection" data-price="25">
+                <img src="images/IMG-20260515-WA0103.jpg" alt="Rose collection" class="w-full h-72 object-cover">
+                <div class="flex items-center justify-between gap-4 p-5">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[#e4098d] text-2xl">Rose Collection</p>
+                        <strong class="text-[#6f7275] text-2xl font-normal">$25</strong>
+                    </div>
+                    <button
+                        class="cursor-pointer bg-[#e4098d] hover:bg-[#c4087d] transition-colors duration-300 w-14 h-14 rounded-full counter"
+                        aria-label="Add to cart"><i class="fas fa-cart-plus text-white text-xl"></i></button>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full white-card"
+                data-name="white rose" data-price="35">
+                <img src="images/IMG-20260515-WA0100.jpg" alt="White rose" class="w-full h-72 object-cover">
+                <div class="flex items-center justify-between gap-4 p-5">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[#e4098d] text-2xl">White Rose</p>
+                        <strong class="text-[#6f7275] text-2xl font-normal">$35</strong>
+                    </div>
+                    <button
+                        class="cursor-pointer bg-[#e4098d] hover:bg-[#c4087d] transition-colors duration-300 w-14 h-14 rounded-full counter"
+                        aria-label="Add to cart"><i class="fas fa-cart-plus text-white text-xl"></i></button>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full red-card"
+                data-name="red rose" data-price="40">
+                <img src="images/IMG-20260515-WA0096.jpg" alt="Red rose" class="w-full h-72 object-cover">
+                <div class="flex items-center justify-between gap-4 p-5">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[#e4098d] text-2xl">Red Rose</p>
+                        <strong class="text-[#6f7275] text-2xl font-normal">$40</strong>
+                    </div>
+                    <button
+                        class="cursor-pointer bg-[#e4098d] hover:bg-[#c4087d] transition-colors duration-300 w-14 h-14 rounded-full counter"
+                        aria-label="Add to cart"><i class="fas fa-cart-plus text-white text-xl"></i></button>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full pink-card"
+                data-name="pink rose" data-price="15">
+                <img src="images/IMG-20260515-WA0094.jpg" alt="Pink rose" class="w-full h-72 object-cover">
+                <div class="flex items-center justify-between gap-4 p-5">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[#e4098d] text-2xl">Pink Rose</p>
+                        <strong class="text-[#6f7275] text-2xl font-normal">$15</strong>
+                    </div>
+                    <button
+                        class="cursor-pointer bg-[#e4098d] hover:bg-[#c4087d] transition-colors duration-300 w-14 h-14 rounded-full counter"
+                        aria-label="Add to cart"><i class="fas fa-cart-plus text-white text-xl"></i></button>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full red-card"
+                data-name="red rose" data-price="20">
+                <img src="images/IMG-20260515-WA0092.jpg" alt="Red rose" class="w-full h-72 object-cover">
+                <div class="flex items-center justify-between gap-4 p-5">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[#e4098d] text-2xl">Red Rose</p>
+                        <strong class="text-[#6f7275] text-2xl font-normal">$20</strong>
+                    </div>
+                    <button
+                        class="cursor-pointer bg-[#e4098d] hover:bg-[#c4087d] transition-colors duration-300 w-14 h-14 rounded-full counter"
+                        aria-label="Add to cart"><i class="fas fa-cart-plus text-white text-xl"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- floating cart button -->
+    <a href="cart.html" aria-label="Go to cart"
+        class="fixed bottom-10 right-10 w-16 h-16 rounded-full bg-[#e4098d] hover:bg-[#c4087d] transition-colors duration-300 flex items-center justify-center">
+        <i class="fa-solid fa-cart-shopping text-3xl text-white"></i>
+        <span
+            class="absolute -top-1 -right-1 bg-red-500 text-white text-sm rounded-full w-6 h-6 flex items-center justify-center count">0</span>
+    </a>
+
+
+    <!-- footer -->
+    <footer class="bg-[#2f2d2d] mt-16 py-14 text-center text-white">
+
+        <h2 class="text-[#e4098d] text-5xl">Bloom Flower Shop</h2>
+
+        <div class="flex flex-col items-center justify-center gap-6 mt-5">
+            <p class="text-2xl">Follow Us On Social Media</p>
+            <div class="flex items-center justify-center gap-5">
+                <a href=""
+                    class="text-2xl w-12 h-12 flex items-center justify-center hover:text-[#c20875] transition-colors duration-300 bg-[#4b4646] rounded-full"><i
+                        class="fab fa-facebook"></i></a>
+                <a href=""
+                    class="text-2xl w-12 h-12 flex items-center justify-center hover:text-[#c20875] transition-colors duration-300 bg-[#4b4646] rounded-full"><i
+                        class="fab fa-instagram"></i></a>
+                <a href=""
+                    class="text-2xl w-12 h-12 flex items-center justify-center hover:text-[#c20875] transition-colors duration-300 bg-[#4b4646] rounded-full"><i
+                        class="fab fa-x"></i></a>
+                <a href=""
+                    class="text-2xl w-12 h-12 flex items-center justify-center hover:text-[#c20875] transition-colors duration-300 bg-[#4b4646] rounded-full"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="text-lg">&copy; 2026 Bloom. Flowers Shop.</p>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

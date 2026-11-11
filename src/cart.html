@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your cart</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-['Lobster'] ">
+
+    <header class="text-[#e4098d] ">
+        <nav class="mx-auto w-[80%] flex items-center justify-between py-5">
+
+            <div>
+                <a href="index.html" class="text-3xl font-semibold">Bloom</a>
+            </div>
+            <div class=" menu relative">
+
+                <button class="md:hidden btn-list   cursor-pointer"><i class="fas fa-bars"></i></button>
+
+
+                <ul id="nav-menu"
+                    class="ul-hidden fixed -right-75 top-3.5 md:static  text-lg bg-white w-[150px]  md:w-auto rounded-[10px] pt-[50px]  transition-all duration-300 ease-in-out h-[100vh] flex flex-col gap-10  items-center md:gap-10 md:h-auto md:flex-row md:pt-0">
+
+                    <button
+                        class="absolute top-[10px] left-[4px]  rounded-full w-5 h-[20px] flex items-center justify-center cursor-pointer hidden "
+                        id="x">x</button>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#flower">Flowers</a></li>
+                    <li><a href="index.html#bouquet">Bouquet</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="text-center text-2xl text-[#e4098d]">Made With Love</h1>
+    </section>
+
+
+    <section class="bg-[#fce4ec] py-[30px] mt-[50px]">
+
+        <!-- grid wrapper and container -->
+        <div class=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 w-[90%] mx-auto " id="cart-container">
+        </div>
+
+        <!-- hidden state (empty cart) -->
+        <div class="hidden" id="empty">
+            <div class="flex flex-col items-center justify-center gap-5 mt-10">
+                <div>
+                    <i class="fa-solid fa-cart-arrow-down text-7xl text-[#e4098d]"></i>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-4 mt-3 text-[#6f7275]">
+                    <h2>Nothing In Your Cart </h2>
+                    <p>Your Cart Is Currently Empty</p>
+                    <a href="order.html"
+                        class="bg-[#e4098d] text-white py-2 px-6 rounded-full hover:bg-[#c4087d] transition-colors duration-300 text-lg">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="bg-[#2f2d2d] mt-[60px] py-10 text-center text-white">
+
+        <h2 class="text-[#e4098d] text-4xl">Bloom Flower Shop</h2>
+
+        <div class="flex flex-col items-center justify-center gap-5 mt-3">
+            <p>Follow Us On Social Media</p>
+            <div class="flex items-center justify-center gap-5">
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-facebook"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-instagram"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-x"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-whatsapp "></i></a>
+            </div>
+            <p>&copy; 2026 Bloom. Flowers Shop.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

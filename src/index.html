@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body class="font-['Lobster'] text-xl">
+
+    <!-- header -->
+    <header class="text-[#e4098d]">
+        <nav class="mx-auto max-w-7xl flex items-center justify-between py-5">
+            <div>
+                <a href="index.html" class="text-5xl">Bloom</a>
+            </div>
+            <div class="menu relative">
+                <button class="md:hidden btn-list cursor-pointer text-3xl"><i class="fas fa-bars"></i></button>
+                <ul id="nav-menu"
+                    class="fixed -right-75 top-3.5 text-2xl bg-white w-45 rounded-[10px] pt-12.5 transition-all duration-300 ease-in-out h-screen flex flex-col gap-10 items-center md:static md:w-auto md:gap-12 md:h-auto md:flex-row md:pt-0">
+                    <button
+                        class="absolute top-2.5 left-1 rounded-full w-5 h-5 flex items-center justify-center cursor-pointer hidden"
+                        id="x">x</button>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#flower">Flowers</a></li>
+                    <li><a href="index.html#bouquet">Bouquet</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- hero -->
+        <section class="bg-[url('../images/background.jpg')] bg-cover bg-top bg-no-repeat" id="home">
+            <div class="head flex flex-col items-center justify-center text-center gap-6 text-white min-h-[75vh] px-4 bg-[rgba(0,0,0,.5)]"
+                data-aos="fade-up">
+
+                <h1 class="text-6xl md:text-8xl">Fresh Flowers</h1>
+                <p class="text-3xl md:text-4xl">Beautiful Flowers for everyone</p>
+
+                <a href="order.html"
+                    class="mt-4 bg-[#e4098d] text-white py-3 px-10 rounded-full hover:bg-[#c4087d] transition-colors duration-300 text-2xl">
+                    Shop Now
+                </a>
+            </div>
+        </section>
+
+        <!-- flowers -->
+        <section class="py-20" id="flower" data-aos="fade-up">
+
+            <div class="flex flex-col gap-3 items-center justify-center text-center text-[#e4098d] mb-12 px-4">
+                <h2 class="text-5xl">Our Flowers</h2>
+                <p class="text-2xl text-[#6f7275]">Picked fresh every morning</p>
+            </div>
+
+            <div class="w-[90%] max-w-7xl mx-auto card-wrapper grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+                <div
+                    class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full">
+                    <img src="images/card1.jpg" alt="Red rose" class="w-full h-72 object-cover">
+                    <p class="text-[#e4098d] text-3xl text-center py-6">Red Rose</p>
+                </div>
+
+                <div
+                    class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full">
+                    <img src="images/card2.jpg" alt="Lavender" class="w-full h-72 object-cover">
+                    <p class="text-[#e4098d] text-3xl text-center py-6">Lavender</p>
+                </div>
+
+                <div
+                    class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full">
+                    <img src="images/card3.jpg" alt="Pink rose" class="w-full h-72 object-cover">
+                    <p class="text-[#e4098d] text-3xl text-center py-6">Pink Rose</p>
+                </div>
+
+                <div
+                    class="card bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full">
+                    <img src="images/card4.jpg" alt="Sunflower" class="w-full h-72 object-cover">
+                    <p class="text-[#e4098d] text-3xl text-center py-6">Sunflower</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- bouquet -->
+        <section class="bg-[#fce4ec] py-20 text-[#e4098d]" id="bouquet">
+
+            <div class="flex flex-col gap-3 items-center justify-center text-center px-4" data-aos="fade-up">
+                <h2 class="text-5xl">Create Your Bouquet</h2>
+                <p class="text-2xl text-[#6f7275]">With Your Favorite Flowers</p>
+            </div>
+
+            <div class="card-wrapper grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 w-[90%] max-w-7xl mx-auto mt-12"
+                data-aos="fade-up">
+
+                <div
+                    class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full">
+                    <img src="images/b1.jpg" alt="Collection of roses" class="w-full h-72 object-cover">
+                    <p class="text-3xl text-center py-6">Collection of Roses</p>
+                </div>
+
+                <div
+                    class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full">
+                    <img src="images/b2.jpg" alt="Collection of roses" class="w-full h-72 object-cover">
+                    <p class="text-3xl text-center py-6">Collection of Roses</p>
+                </div>
+
+                <div
+                    class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full">
+                    <img src="images/b3.jpg" alt="Collection of roses" class="w-full h-72 object-cover">
+                    <p class="text-3xl text-center py-6">Collection of Roses</p>
+                </div>
+
+                <div
+                    class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col w-full">
+                    <img src="images/b4.jpg" alt="Collection of roses" class="w-full h-72 object-cover">
+                    <p class="text-3xl text-center py-6">Collection of Roses</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="py-20 text-[#e4098d]" id="contact">
+            <div class="flex flex-col gap-8 items-center justify-center px-4">
+                <h2 class="text-5xl">Contact Us</h2>
+
+                <form action="" id="send-form" class="flex flex-col items-center justify-center gap-5 w-full">
+
+                    <input id="name" type="text" name="name" placeholder="Your Name"
+                        class="border border-gray-300 rounded-lg py-3 px-5 w-full max-w-xl text-xl text-[#2f2d2d] focus:outline-none">
+                    <input id="email" type="email" name="email" required placeholder="Your Email"
+                        class="border border-gray-300 rounded-lg py-3 px-5 w-full max-w-xl text-xl text-[#2f2d2d] focus:outline-none">
+                    <textarea id="textarea" name="message" rows="6" placeholder="Your Message"
+                        class="border border-gray-300 rounded-lg py-3 px-5 w-full max-w-xl text-xl text-[#2f2d2d] focus:outline-none"></textarea>
+                    <button id="btn-send"
+                        class="bg-[#e4098d] text-white py-3 px-12 rounded-full text-2xl hover:bg-[#c20875] transition-colors duration-300 cursor-pointer">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="bg-[#2f2d2d] py-14 text-center text-white">
+
+        <h2 class="text-[#e4098d] text-5xl">Bloom Flower Shop</h2>
+
+        <div class="flex flex-col items-center justify-center gap-6 mt-5">
+            <p class="text-2xl">Follow Us On Social Media</p>
+            <div class="flex items-center justify-center gap-5">
+                <a href=""
+                    class="text-2xl w-12 h-12 flex items-center justify-center hover:text-[#c20875] transition-colors duration-300 bg-[#4b4646] rounded-full"><i
+                        class="fab fa-facebook"></i></a>
+                <a href=""
+                    class="text-2xl w-12 h-12 flex items-center justify-center hover:text-[#c20875] transition-colors duration-300 bg-[#4b4646] rounded-full"><i
+                        class="fab fa-instagram"></i></a>
+                <a href=""
+                    class="text-2xl w-12 h-12 flex items-center justify-center hover:text-[#c20875] transition-colors duration-300 bg-[#4b4646] rounded-full"><i
+                        class="fab fa-x"></i></a>
+                <a href=""
+                    class="text-2xl w-12 h-12 flex items-center justify-center hover:text-[#c20875] transition-colors duration-300 bg-[#4b4646] rounded-full"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="text-lg">&copy; 2026 Bloom. Flowers Shop.</p>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
