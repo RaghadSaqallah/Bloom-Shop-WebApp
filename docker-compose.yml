@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: bloom-shop:latest
+    container_name: bloom-shop
+    ports:
+      - "8080:80"
+    restart: unless-stopped
