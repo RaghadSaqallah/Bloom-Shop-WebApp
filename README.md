@@ -166,6 +166,43 @@ Then open `src/index.html` with VS Code Live Server.
 
 ---
 
+## 🚀 Deploy to Production (VPS / Cloud Environment)
+
+The original VPS provider (Claw Cloud) was no longer available, so the project was deployed on a GitHub Codespace (Linux cloud environment) using the same Docker workflow.
+
+### 1. Install Git and Docker
+Check whether they are installed:
+```bash
+git --version && docker --version
+```
+If missing (Ubuntu/Debian):
+```bash
+sudo apt update && sudo apt install -y git docker.io docker-compose-v2
+```
+
+### 2. Clone the repository
+```bash
+git clone https://github.com/RaghadSaqallah/Bloom-Shop-WebApp.git
+cd Bloom-Shop-WebApp
+```
+
+### 3. Build and run
+```bash
+docker compose up --build -d
+docker ps   # STATUS should show "(healthy)"
+```
+
+### 4. Verify
+```bash
+curl -I http://localhost:8080   # expect HTTP/1.1 200 OK
+```
+
+## 🌐 Production URL
+
+- **URL:** https://automatic-space-lamp-jjv7qvx94vv6h4jr-8080.app.github.dev/index.html
+- **Note:** This is a temporary Codespaces URL. It works only while the codespace is running and the port is public.
+
+
 ## 🙏 Attribution
 
 This project was designed and built by the author as an original work (it is not based on another repository). It uses the following open-source components:
