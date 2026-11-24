@@ -31,3 +31,45 @@ Cannot find module '@tailwindcss/oxide-linux-x64-gnu'
 ## Most important Git/GitHub lesson
 
 Small commits with clear messages (`feat:`, `docker:`, `ci:`, `docs:`) make the history readable, and working on a feature branch (`feature/docker-setup`) with a Pull Request keeps `main` clean. I also learned that tiny details matter: my README file was accidentally named `README .md` (with a space), so `git add README.md` failed with `pathspec did not match any files` until I renamed it. Adding `.gitignore` before the first commit also kept `node_modules` out of the repository.
+
+## Deployment Notes (Assignment #3)
+
+### Challenges and how I overcame them
+
+1. **The recommended VPS provider was not working.**
+   I first tried Claw Cloud, the provider suggested in the assignment, but the
+   service was discontinued and I could not create a server.
+
+2. **Azure for Students failed with my university email.**
+   I researched alternative providers and tried Azure using my university email,
+   but I received this error: "The client does not have access rights to the
+   content." I searched for solutions, but none of them worked.
+
+3. **GitHub Student Developer Pack required proof of enrollment.**
+   I then tried the GitHub Student Developer Pack, but it required verification
+   documents, and its main VPS offer (DigitalOcean) also requires a card or PayPal.
+
+4. **Other providers required a bank card.**
+   The other providers I found (such as Oracle Cloud, AWS, and Google Cloud)
+   require a credit card, which I do not have.
+
+5. **Solution: GitHub Codespaces.**
+   I used a GitHub Codespace as a cloud Linux environment. It needs no credit
+   card, and Git and Docker were already installed. I cloned the repository,
+   then built and ran the project with the same workflow as Assignment #2:
+   `docker compose up --build -d`.
+
+### Difference between the assignment requirement and Codespaces
+
+The assignment asks for a VPS, which is a server that runs 24/7 and has a public
+IP address. A Codespace is a cloud development environment, so:
+
+- It has no permanent public IP. The project is reachable through a temporary
+  forwarded URL on port 8080.
+- It stops when the session ends or goes idle, so the project is not available 24/7.
+- I could not connect through SSH as on a real VPS, because the terminal runs
+  in the browser.
+
+All the other steps (checking Git and Docker, cloning the repository, building
+and running the container, and verifying the result) were done the same way as
+they would be on a VPS.
